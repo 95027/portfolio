@@ -1,11 +1,19 @@
 /* Global Styles */
+h1, h2, h3, h4, h5, h6{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p, span{
+    font-family:cursive;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
+.bgLight{
+    background-color: rgba(255, 255, 0, .2);
+}
 /* Header Styles */
 header {
     background-color: #333;
@@ -172,12 +180,6 @@ footer {
     }
 }
 
-/* About Section Styles */
-#about {
-    background-color: #f9f9f9;
-    padding: 4rem 0;
-}
-
 .scrolling-text {
     height: 80px; /* Adjust height to accommodate both lines */
     overflow: hidden;
@@ -237,7 +239,6 @@ footer {
 
 /* Contact Section Styles */
 #contact {
-    background-color: #f9f9f9;
     padding: 4rem 0;
 }
 
@@ -290,4 +291,37 @@ footer {
     margin: 1rem 0; /* Add some margin *//* Make the text uppercase */
     letter-spacing: 1px; /* Add some letter spacing */
     position: relative; /* Relative position for the pseudo-element */
+}
+/* General styles */
+.highlight {
+    color: #007bff; /* Attention-grabbing color */
+    font-weight: bold;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    .highlight {
+        font-size: 12px; /* Smaller font size for mobile view */
+    }
+
+    .intro-text p {
+        font-size: 1rem; /* Adjust the overall paragraph font size for mobile view */
+    }
+}
+/* Animation Keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.animated-heading {
+    animation: pulse 2s ease-in-out infinite; 
 }
