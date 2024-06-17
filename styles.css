@@ -77,6 +77,27 @@ header {
     color: white; /* Set color for active link */
 }
 
+.navbar-toggler .close-icon {
+    display: none;
+}
+
+.navbar-toggler.collapsed .openIcon {
+    display: inline;
+}
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .openIcon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .close-icon {
+    display: inline;
+}
+
+
 
 /* Section Styles */
 section {

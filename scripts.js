@@ -43,3 +43,21 @@ document.addEventListener('scroll', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+
+    navbarToggler.addEventListener('click', function() {
+        navbarToggler.classList.toggle('collapsed');
+    });
+
+    navbarCollapse.addEventListener('shown.bs.collapse', function () {
+        navbarToggler.classList.remove('collapsed');
+    });
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+        navbarToggler.classList.add('collapsed');
+    });
+});
+
+
