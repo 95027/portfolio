@@ -319,14 +319,22 @@ footer {
     font-weight: bold;
 }
 
+
+.skills img{
+    height: 40px;
+    border-radius: 4px;
+}
+
 /* Media query for mobile view */
 @media (max-width: 767px) {
     .highlight {
         font-size: 12px; /* Smaller font size for mobile view */
     }
-
     .intro-text p {
         font-size: 1rem; /* Adjust the overall paragraph font size for mobile view */
+    }
+    .skills img{
+        height: 28px;
     }
 }
 /* Animation Keyframes */
@@ -341,8 +349,6 @@ footer {
         transform: scale(1);
     }
 }
-
-
-.animated-heading {
+.skills img{
     animation: pulse 2s ease-in-out infinite; 
 }
