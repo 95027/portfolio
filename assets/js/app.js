@@ -50,7 +50,7 @@
       { label: 'Email', href: 'mailto:kumarchhembeti26@gmail.com' },
     ].filter(Boolean);
 
-    profileLinks.forEach((l) => {
+    profileLinks?.forEach((l) => {
       const a = create('a', 'tag');
       a.href = l.href;
       a.target = '_blank';
