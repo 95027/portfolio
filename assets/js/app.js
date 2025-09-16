@@ -56,7 +56,7 @@
       a.target = '_blank';
       a.rel = 'noopener';
       a.textContent = l.label;
-      linksEl?.appendChild(a);
+      // linksEl?.appendChild(a);
       socials?.appendChild(a.cloneNode(true));
     });
   } else {
