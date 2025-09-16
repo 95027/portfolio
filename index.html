@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Sai Kumar Chembeti</title>
+    <meta
+      name="description"
+      content="Personal portfolio of 95027: projects, skills, contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+              display: ["Sora", "Inter", "ui-sans-serif", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta property="og:title" content="Portfolio | 95027" />
+    <meta
+      property="og:description"
+      content="Projects and profile pulled from GitHub."
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/70 border-b border-slate-800"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="text-lg font-bold tracking-tight font-display"
+          >Sai Kumar Chembeti</a
+        >
+        <button
+          id="menu-btn"
+          class="sm:hidden inline-flex items-center justify-center h-9 w-9 rounded-md border border-slate-700 bg-slate-800 hover:bg-slate-700"
+          aria-label="Open menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <nav id="main-nav" class="hidden sm:flex gap-6 text-sm">
+          <a class="hover:text-teal-400" href="#about">About</a>
+          <a class="hover:text-teal-400" href="#skills">Skills</a>
+          <a class="hover:text-teal-400" href="#featured">Featured</a>
+          <a class="hover:text-teal-400" href="#contact">Contact</a>
+        </nav>
+        <div class="hidden sm:flex items-center gap-3">
+          <a
+            id="github-link"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 border border-slate-700"
+            href="https://github.com/95027"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-nav"
+        class="sm:hidden hidden border-t border-slate-800 bg-slate-950/90"
+      >
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
+          <a class="hover:text-teal-400" href="#about">About</a>
+          <a class="hover:text-teal-400" href="#skills">Skills</a>
+          <a class="hover:text-teal-400" href="#featured">Featured</a>
+          <a class="hover:text-teal-400" href="#contact">Contact</a>
+          <a
+            class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 border border-slate-700 w-max"
+            href="https://github.com/95027"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div
+          class="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-teal-500 blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-indigo-500 blur-3xl"
+        ></div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 py-20 sm:py-28">
+        <div class="grid md:grid-cols-2 items-center gap-10">
+          <div>
+            <h1
+              id="name"
+              class="text-3xl sm:text-5xl font-extrabold tracking-tight font-display"
+            >
+              Sai Kumar Chembeti
+            </h1>
+            <span
+              class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-300 ring-1 ring-inset ring-teal-500/30"
+              >Full Stack Developer</span
+            >
+            <p id="bio" class="mt-4 text-slate-300 leading-relaxed">
+              Full Stack Developer with 2+ years of experience in building
+              secure REST APIs, scalable UIs, and integrating cloud services
+              using Node.js, Laravel, and React.js.
+            </p>
+            <div
+              class="mt-4 grid grid-cols-3 gap-3 max-w-xs text-center text-xs"
+            >
+              <div class="card p-3">
+                <div class="text-slate-400">Years</div>
+                <div class="font-semibold">2+</div>
+              </div>
+              <div class="card p-3">
+                <div class="text-slate-400">APIs built</div>
+                <div class="font-semibold">6+</div>
+              </div>
+              <div class="card p-3">
+                <div class="text-slate-400">Deploys</div>
+                <div class="font-semibold">3+</div>
+              </div>
+            </div>
+            <ul
+              class="mt-4 text-slate-400 text-sm list-disc list-outside pl-5 py-2"
+            >
+              <li class="mb-1">RESTful APIs and service integrations</li>
+              <li class="mb-1">
+                Cloud deployments and infrastructure (AWS EC2, S3)
+              </li>
+              <li class="mb-1">Reusable UI component systems</li>
+              <li class="mb-1">
+                Real‑time features and notifications (WebSockets, Socket.io,
+                Pusher)
+              </li>
+              <li>Payments and webhooks (Stripe, PayPal, Razorpay)</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                href="#featured"
+                class="px-4 py-2 rounded-md btn-accent font-semibold"
+                >Featured Work</a
+              >
+              <a
+                id="resume-link"
+                href="#contact"
+                class="px-4 py-2 rounded-md border border-slate-700 hover:bg-slate-800"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="justify-self-center">
+            <img
+              id="avatar"
+              alt="Avatar"
+              class="h-40 w-40 sm:h-48 sm:w-48 rounded-full ring-4 ring-slate-800 object-cover"
+              src="https://github.com/95027.png"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null;this.src='data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 128 128\'%3e%3crect width=\'128\' height=\'128\' rx=\'64\' fill=\'%231f2937\'/%3e%3ctext x=\'50%25\' y=\'54%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'48\' fill=\'%23e5e7eb\'\'>SK\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0%3c/text%3e%3c/svg%3e';"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p id="about-text" class="mt-4 text-slate-300">
+          Full‑stack developer focused on building reliable APIs and responsive
+          interfaces. I specialize in Node.js and Laravel backends,
+          React/Next.js frontends, and AWS deployments (S3, EC2). I care about
+          clean architecture, performance, and developer experience.
+        </p>
+        <ul class="mt-4 grid sm:grid-cols-3 gap-3 text-sm text-slate-300">
+          <li class="card p-3">
+            Design and ship RESTful APIs with secure auth (JWT, RBAC)
+          </li>
+          <li class="card p-3">
+            Integrate payments (Stripe, PayPal, Razorpay) and webhooks
+          </li>
+          <li class="card p-3">
+            Real‑time features via WebSockets/Socket.io/Pusher
+          </li>
+          <li class="card p-3">
+            CI/CD automation and deployments (GitHub Actions, AWS EC2, cPanel)
+          </li>
+          <li class="card p-3">
+            Scalable data modeling and persistence (MySQL, Sequelize)
+          </li>
+          <li class="card p-3">
+            Frontend architecture and reusable components (React/Next.js,
+            Tailwind, Bootstrap)
+          </li>
+          <li class="card p-3">
+            TypeScript use across UI/API clients with strict typing for
+            reliability
+          </li>
+          <li class="card p-3">
+            Storage and media pipelines with AWS S3 and presigned uploads
+          </li>
+          <li class="card p-3">
+            API documentation, testing, and quality (REST conventions, Postman)
+          </li>
+        </ul>
+        <!-- <ul id="links" class="mt-4 flex flex-wrap gap-3 text-sm"></ul> -->
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Skills</h2>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <div class="card p-5">
+            <div class="text-xs text-slate-400">Backend</div>
+            <div class="mt-1 font-semibold">
+              Node.js, Express.js, PHP, Laravel, Livewire
+            </div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <span class="tag">REST APIs</span>
+              <span class="tag">Auth (JWT, RBAC)</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Queues/Workers</span>
+            </div>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs text-slate-400">Frontend</div>
+            <div class="mt-1 font-semibold">React.js, Next.js</div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <span class="tag">TypeScript</span>
+              <span class="tag">TailwindCSS</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Reusable UI</span>
+            </div>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs text-slate-400">Data & Cloud</div>
+            <div class="mt-1 font-semibold">
+              MySQL, Sequelize, AWS (EC2, S3), cPanel
+            </div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <span class="tag">Git</span>
+              <span class="tag">Postman</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">S3 uploads</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="mt-8">
+          <div class="text-xs text-slate-400">Languages from GitHub</div>
+          <div id="skills-list" class="mt-3 flex flex-wrap gap-2"></div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Experience / Services -->
+    <section id="experience" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Experience</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <div class="card p-5 md:col-span-2">
+            <div class="text-sm text-slate-400">11/2023 — Present</div>
+            <div class="mt-1 font-semibold">
+              Full Stack Developer · Spack Solutions Pvt Ltd
+            </div>
+            <ul
+              class="mt-3 list-disc list-inside text-sm text-slate-300 space-y-2"
+            >
+              <li class="mb-2">
+                Designed and maintained RESTful APIs using Node.js and Laravel
+                to support modular, scalable business logic for web and mobile
+                platforms.
+              </li>
+              <li class="mb-2">
+                Implemented secure JWT-based authentication and role-based
+                access control for APIs.
+              </li>
+              <li class="mb-2">
+                Integrated Stripe, PayPal, and Razorpay with validation,
+                webhooks, and transaction logging.
+              </li>
+              <li class="mb-2">
+                Collaborated with React.js and Next.js frontends to connect APIs
+                and ensure responsive interfaces.
+              </li>
+              <li class="mb-2">
+                Implemented real-time chat/notifications using WebSockets,
+                Socket.io, and Pusher.
+              </li>
+              <li class="mb-2">
+                Deployed on AWS EC2 and cPanel; managed SSL, env configs,
+                background workers, and CI/CD.
+              </li>
+              <li>
+                Reviewed PRs, mentored junior devs, and aligned delivery with
+                business goals.
+              </li>
+            </ul>
+            <!-- <div class="mt-4 flex flex-wrap gap-2 text-xs">
+              <span class="tag">Node.js</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">JWT</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">PayPal</span>
+              <span class="tag">Razorpay</span>
+              <span class="tag">React.js</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Socket.io</span>
+              <span class="tag">Pusher</span>
+              <span class="tag">AWS EC2</span>
+              <span class="tag">cPanel</span>
+              <span class="tag">SSL</span>
+              <span class="tag">CI/CD</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <!-- <section id="tech" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Tech Stack</h2>
+        <div
+          class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
+          id="tech-grid"
+        >
+          <div class="card p-4">
+            <div class="text-sm text-slate-400">Backend</div>
+            <div class="mt-1 font-semibold">
+              Node.js, Express.js, PHP, Laravel, Livewire
+            </div>
+            <div class="mt-1 text-sm text-slate-300">MySQL, Sequelize</div>
+          </div>
+          <div class="card p-4">
+            <div class="text-sm text-slate-400">Frontend</div>
+            <div class="mt-1 font-semibold">React.js, Next.js</div>
+            <div class="mt-1 text-sm text-slate-300">
+              JavaScript, TypeScript, HTML, CSS, Bootstrap, TailwindCSS
+            </div>
+          </div>
+          <div class="card p-4">
+            <div class="text-sm text-slate-400">Tools / Cloud</div>
+            <div class="mt-1 font-semibold">AWS (S3, EC2), cPanel, Git</div>
+            <div class="mt-1 text-sm text-slate-300">REST APIs, Postman</div>
+          </div>
+        </div>
+        <div class="mt-6 text-sm text-slate-400">
+          Skills provided by you, complemented by GitHub insights.
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Featured Projects -->
+    <section id="featured" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Featured Projects</h2>
+        <div id="featured-grid" class="mt-8 grid md:grid-cols-2 gap-6">
+          <div class="card p-5">
+            <div class="text-sm text-slate-400">The Scriptcraft — LMS</div>
+            <div class="mt-1 font-semibold">
+              Learning Management System (LMS)
+            </div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <span class="tag">Laravel</span>
+              <span class="tag">Blade</span>
+              <span class="tag">React Native</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">AWS</span>
+            </div>
+            <ul
+              class="mt-3 list-disc list-outside pl-5 text-sm text-slate-300 space-y-2"
+            >
+              <li>
+                Built a scalable multi‑role LMS (Institute, Faculty, Student)
+                with secure logins and dynamic dashboards.
+              </li>
+              <li>
+                Developed RESTful APIs to support mobile app integration, user
+                tracking, and content synchronization.
+              </li>
+              <li>
+                Enabled student essay/story uploads with rich‑text and file
+                attachments stored on S3.
+              </li>
+              <li>
+                Integrated real‑time chat using Pusher & Laravel WebSockets for
+                faculty‑student communication.
+              </li>
+              <li>
+                Deployed on AWS EC2 with workers, SSL, queues, and
+                environment‑based configs.
+              </li>
+            </ul>
+          </div>
+          <div class="card p-5">
+            <div class="text-sm text-slate-400">Dharani India</div>
+            <div class="mt-1 font-semibold">
+              Property Listing & Lead Management Platform
+            </div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">AWS</span>
+            </div>
+            <ul
+              class="mt-3 list-disc list-outside pl-5 text-sm text-slate-300 space-y-1"
+            >
+              <li>
+                Designed REST APIs for listing, filtering, and managing
+                properties (plots, villas, houses, farmland).
+              </li>
+              <li>
+                Built a React.js admin panel for listings, leads, agents,
+                locations, and media assets.
+              </li>
+              <li>
+                Integrated AWS S3 for secure image/document uploads with access
+                control.
+              </li>
+              <li>
+                Implemented role‑based access for admins and agents with lead
+                tracking and property status updates.
+              </li>
+              <li>
+                Deployed on AWS EC2 with production setup including SSL and
+                environment configs.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-3 sm:px-4 py-14">
+        <h2 class="text-2xl font-bold">Education</h2>
+        <div class="mt-6 grid gap-4">
+          <div class="card p-5">
+            <div class="text-sm text-slate-400">2015 — 2019</div>
+            <div class="mt-1 font-semibold">
+              Bachelor of Technology in Mechanical Engineering
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <p class="mt-4 text-slate-300">
+          Have a project, collaboration, or role in mind? I usually reply within
+          24 hours.
+        </p>
+        <div class="mt-6 grid sm:grid-cols-3 gap-4">
+          <a
+            href="mailto:kumarchhembeti26@gmail.com"
+            class="card p-4 flex items-center gap-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-teal-400"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.41-.91a.5.5 0 0 0-.41.49v.3l8 4.62 8-4.62v-.3a.5.5 0 0 0-.41-.49H4.41ZM20 8.88l-7.59 4.38a1.5 1.5 0 0 1-1.82 0L3 8.88V17.5c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V8.88Z"
+              />
+            </svg>
+            <div>
+              <div class="text-xs text-slate-400">Email</div>
+              <div class="font-semibold">kumarchhembeti26@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+919502734186" class="card p-4 flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-teal-400"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M6.62 10.79a15.91 15.91 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.37 2.29.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.29.2 2.48.57 3.58.13.35.05.74-.24 1.01l-2.2 2.2Z"
+              />
+            </svg>
+            <div>
+              <div class="text-xs text-slate-400">Phone</div>
+              <div class="font-semibold">+91 95027 34186</div>
+            </div>
+          </a>
+          <div class="card p-4 flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-teal-400"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
+              />
+            </svg>
+            <div>
+              <div class="text-xs text-slate-400">Location</div>
+              <div class="font-semibold">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="mt-6">
+          <a
+            href="mailto:kumarchhembeti26@gmail.com?subject=Project%20Inquiry"
+            class="px-4 py-2 rounded-md btn-accent font-semibold"
+            >Email me</a
+          >
+        </div> -->
+        <!-- <div class="mt-6 flex flex-wrap gap-2">
+          <span class="tag">Open to collaboration</span>
+          <span class="tag">Open source</span>
+          <span class="tag">Remote friendly</span>
+          <a
+            class="tag"
+            href="https://github.com/95027"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub profile"
+            >GitHub</a
+          >
+        </div> -->
+      </div>
+    </section>
+
+    <footer class="border-t border-slate-800">
+      <div
+        class="max-w-6xl mx-auto px-4 py-8 text-sm text-center text-slate-400"
+      >
+        <span id="footer-year"></span> © Sai Kumar Chembeti — Full Stack
+        Developer.
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

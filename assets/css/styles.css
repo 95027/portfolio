@@ -1,0 +1,46 @@
+/* Custom utilities on top of Tailwind (plain CSS for CDN use) */
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #0f172a; /* slate-900 */
+  border: 1px solid #334155; /* slate-700 */
+  color: #e2e8f0; /* slate-200 */
+}
+
+.card {
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937; /* slate-800 */
+  background-color: rgba(15, 23, 42, 0.9); /* slate-900 */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.card:hover {
+  background-color: #0b1220;
+  transform: translateY(-2px);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Accent button gradient and hover */
+.btn-accent {
+  background-image: linear-gradient(90deg, #14b8a6, #6366f1);
+  color: #0f172a;
+}
+.btn-accent:hover { filter: brightness(1.1); }
+
+/* Tag hover polish */
+.tag:hover {
+  border-color: #38bdf8; /* sky-400 */
+  color: #e2e8f0;
+}
+
